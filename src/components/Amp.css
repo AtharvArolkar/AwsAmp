@@ -1,0 +1,17 @@
+.amplify-button{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: 1px;
+  }
+
+  .amplify-fileuploader__dropzone{
+    background-color:rgb(237, 235, 231);
+  }
+
+  .amplify-button--link{
+    background-color: red;
+  }
+  :root {
+    --button-icon: url('C:/Users/atharv_arolkar/Documents/AWS Amp/ampaws/src/logo.svg');
+  }
