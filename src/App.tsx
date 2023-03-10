@@ -1,17 +1,15 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { DefaultFileUploaderExample } from "./components/FileUpload";
-import Navbar from "./components/Navbar";
+import { DefaultFileUploaderExample } from "./components/files-upload/files-upload";
+import Navbar from "./utils/Navbar";
 import { Route, Routes } from "react-router-dom";
-import FileView from "./components/FileView";
+import FileView from "./components/files-view/files-view";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <DefaultFileUploaderExample/> */}
-
       <Routes>
         <Route path="/" element={<DefaultFileUploaderExample />} />
         <Route path="/view" element={<FileView />} />

@@ -1,9 +1,8 @@
 import { FileUploader, Theme, ThemeProvider, View } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
-import './Amp.css';
+import './files-upload.css';
 
 export const DefaultFileUploaderExample = () => {
-  
   const theme :Theme = {
     name: "my-theme",
     tokens: {
@@ -26,13 +25,10 @@ export const DefaultFileUploaderExample = () => {
     <div className="browse-file">
       <ThemeProvider theme={theme}>
         <View>
-          <FileUploader
-            // variation='primary'            
+          <FileUploader          
             hasMultipleFiles={true}
             acceptedFileTypes={["image/*", "video/*"]}
-            accessLevel="public"
-            // onChange={}
-            
+            accessLevel="public"           
           />
         </View>
       </ThemeProvider>
