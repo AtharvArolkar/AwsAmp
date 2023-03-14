@@ -34,23 +34,6 @@ export default function ListSites() {
   const [filterSites, setFilterSites] = useState(useGetList(filter));
   const listOfSites:ISiteObject[] = useGetList(filter);
 
-  
-
-  useEffect(() => {
-    if (filter === "Site Name") {
-      setFilterSites(filterSites.sort((a, b) => a.name.localeCompare(b.name)));
-    } else if (filter === "Manager") {
-      setFilterSites(
-        filterSites.sort((a, b) => a.cm_name.localeCompare(b.cm_name))
-      );
-    } else if (filter === "Status") {
-      setFilterSites(
-        filterSites.sort((a, b) => a.status.localeCompare(b.status))
-      );
-    } else setFilterSites(filterSites.sort((a, b) => a.id.localeCompare(b.id)));
-    console.log(filter);
-
-  }, []);
 
 
   const tableHeader: string[] = [
@@ -107,7 +90,7 @@ export default function ListSites() {
           />
 
           <SelectField
-            label="Fruit"
+            label="Filter"
             labelHidden
             placeholder="Filter"
             onChange={(e) => setFilter(e.target.value)}
