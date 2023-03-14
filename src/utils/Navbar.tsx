@@ -38,6 +38,11 @@ export default function Navbar() {
                 List
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/form">
+                Form
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

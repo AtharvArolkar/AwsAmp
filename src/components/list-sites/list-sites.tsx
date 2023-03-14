@@ -37,16 +37,17 @@ export default function ListSites() {
 
 
   const tableHeader: string[] = [
-    "Sr.No",
+    // "Sr.No",
     "Site Name",
     "Contract Manager",
-    "Phone No",
-    "Emaid Id",
+    "Purpose Ambassador​",
+    // "Phone No",
+    // "Emaid Id",
     "Status",
     "Actions",
   ];
 
-  const filterList: string[] = ["Site Name", "Manager", "Status"];
+  const filterList: string[] = ["Site Name", "Contract Manager", "Purpose Ambassador​"];
 
   const paginationProps = usePagination({
     totalPages: 5,
@@ -119,9 +120,9 @@ export default function ListSites() {
           {filterSites.map((sites, index) => {
             return (
               <TableRow key={index}>
-                <TableCell>
+                {/* <TableCell>
                   <TextComp data={sites.id} />
-                </TableCell>
+                </TableCell> */}
                 <TableCell>
                   <TextComp data={sites.name} />
                 </TableCell>
@@ -129,11 +130,11 @@ export default function ListSites() {
                   <TextComp data={sites.cm_name} />
                 </TableCell>
                 <TableCell>
-                  <TextComp data={sites.phone} />
+                  <TextComp data={sites.pa_name} />
                 </TableCell>
-                <TableCell>
+                {/* <TableCell>
                   <TextComp data={sites.email} />
-                </TableCell>
+                </TableCell> */}
                 <TableCell>
                   <TextComp data={sites.status} />
                 </TableCell>
