@@ -28,7 +28,7 @@ export const DefaultFileUploaderExample = () => {
           <FileUploader          
             hasMultipleFiles={true}
             acceptedFileTypes={["image/*", "video/*"]}
-            accessLevel="public"           
+            accessLevel="public"
           />
         </View>
       </ThemeProvider>

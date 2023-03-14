@@ -1,6 +1,6 @@
 .amplify-button{
-    color: white;
-    background-color: black;
+    /* color: white; 
+     background-color: black; */
     border-radius: 5px;
     border: 1px;
   }
@@ -10,6 +10,6 @@
   }
 
   .amplify-button--link{
-    background-color: red;
+    /* background-color: red; */
   }
   

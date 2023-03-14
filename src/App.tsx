@@ -5,7 +5,8 @@ import { DefaultFileUploaderExample } from "./components/files-upload/files-uplo
 import Navbar from "./utils/Navbar";
 import { Route, Routes } from "react-router-dom";
 import FileView from "./components/files-view/files-view";
-
+import ListSites from "./components/list-sites/list-sites";
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<DefaultFileUploaderExample />} />
         <Route path="/view" element={<FileView />} />
+        <Route path="/list" element={<ListSites />} />
       </Routes>
     </div>
   );

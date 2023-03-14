@@ -1,0 +1,15 @@
+
+.tabledis{
+    border-collapse: collapse;
+    // margin: 25px 50px 10px 50px;
+    // margin-right: 100px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tablediv{
+    // @extend --amplify-components-table-header-color;
+    margin: 25px 50px 10px 50px;
+}

@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import { Link, Route, Routes } from "react-router-dom";
 
 export default function Navbar() {
@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          AWS Amplify
+          <strong>VEOLIA</strong>
         </a>
         <button
           className="navbar-toggler"
@@ -30,6 +30,12 @@ export default function Navbar() {
             <li className="nav-item">
               <Link className="nav-link active" to="/view">
                 Fetch
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link active" to="/list">
+                List
               </Link>
             </li>
           </ul>

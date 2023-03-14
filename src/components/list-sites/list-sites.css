@@ -1,0 +1,5 @@
+.custom-searchfield-class .amplify-input,
+.custom-searchfield-class .amplify-button {
+  border-radius: 0;
+  background-color: blue;
+}
